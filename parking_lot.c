@@ -3,7 +3,7 @@
 
 #define MAX_SLOTS 20
 
-
+//Defining a structure for number of vehicles,type, time, rate etc
 struct Vehicle {
     char number[15];
     char type[10];   
@@ -13,7 +13,7 @@ struct Vehicle {
     int isParked;
 };
 
-struct Vehicle parking[MAX_SLOTS];
+struct Vehicle parking[MAX_SLOTS];  //making an array of structure
 
 float calculateCharge(char type[], int hours) {
     float rate;
